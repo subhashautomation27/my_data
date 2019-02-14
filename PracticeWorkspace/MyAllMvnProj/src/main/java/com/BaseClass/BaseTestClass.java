@@ -7,7 +7,7 @@ public class BaseTestClass {
 	public static WebDriver driver;
  public static void intiailaztion()
  {
-	 System.setProperty("webdriver.chrome.driver","E:\\PracticeWorkspace\\MyAllMvnProj\\Drivers\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver","E:\\protrctor_1\\my_data\\PracticeWorkspace\\MyAllMvnProj\\Drivers\\chromedriver.exe");
 	 driver =new ChromeDriver();
 	 driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
 	 //driver.manage().deleteAllCookies();
