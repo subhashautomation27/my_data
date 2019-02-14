@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="su" duration-ms="63210" started-at="2018-11-21T13:06:57Z" finished-at="2018-11-21T13:08:00Z">
+    <groups>
+    </groups>
+    <test name="t" duration-ms="63210" started-at="2018-11-21T13:06:57Z" finished-at="2018-11-21T13:08:00Z">
+      <class name="com.Facebook.FacebookSample">
+        <test-method status="PASS" signature="facebooklaunch()[pri:0, instance:com.Facebook.FacebookSample@7c0e2abd]" name="facebooklaunch" duration-ms="63158" started-at="2018-11-21T13:06:57Z" finished-at="2018-11-21T13:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebooklaunch -->
+      </class> <!-- com.Facebook.FacebookSample -->
+    </test> <!-- t -->
+  </suite> <!-- su -->
+</testng-results>

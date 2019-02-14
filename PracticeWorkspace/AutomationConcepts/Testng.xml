@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name='s'>
+<test name='t'>
+<classes>
+<class name="com.pack1.SampleTest1"></class>
+<class name="com.pack1.SampleTest2"></class>
+<class name="com.pack2.SampleTest3"></class>
+<class name="com.pack3.SampleTest4"></class>
+</classes>
+</test>
+</suite>

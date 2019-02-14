@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="subahsh" duration-ms="25524" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:52:21Z">
+    <groups>
+    </groups>
+    <test name="t" duration-ms="25524" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:52:21Z">
+      <class name="com.pack1.FirstTest">
+        <test-method status="PASS" signature="clickonlogin()[pri:0, instance:com.pack1.FirstTest@48eff760]" name="clickonlogin" duration-ms="33" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonlogin -->
+        <test-method status="PASS" signature="enterusername()[pri:0, instance:com.pack1.FirstTest@48eff760]" name="enterusername" duration-ms="3" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterusername -->
+        <test-method status="PASS" signature="entervalidpassword()[pri:0, instance:com.pack1.FirstTest@48eff760]" name="entervalidpassword" duration-ms="4" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entervalidpassword -->
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:com.pack1.FirstTest@48eff760]" name="launchbrowser" duration-ms="15" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:51:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+      </class> <!-- com.pack1.FirstTest -->
+      <class name="com.pack2.LaunchBrowserTest">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:com.pack2.LaunchBrowserTest@5ae9a829]" name="launchbrowser" duration-ms="25366" started-at="2018-11-20T11:51:55Z" finished-at="2018-11-20T11:52:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+      </class> <!-- com.pack2.LaunchBrowserTest -->
+    </test> <!-- t -->
+  </suite> <!-- subahsh -->
+</testng-results>

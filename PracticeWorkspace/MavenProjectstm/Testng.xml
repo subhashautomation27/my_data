@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" suite1" parallel="false">
+<test name="smttest">
+<classes>
+<class name="tests.NewTest">
+</class>
+</classes>
+</test>
+</suite>
+

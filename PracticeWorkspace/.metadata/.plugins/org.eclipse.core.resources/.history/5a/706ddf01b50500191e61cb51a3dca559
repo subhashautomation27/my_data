@@ -1,0 +1,52 @@
+package failureandpassandskippscreenshots;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import net.bytebuddy.dynamic.DynamicType.Builder.MethodDefinition.ParameterDefinition.Initial;
+
+public class FailAndPassAndSkipp extends BaseTest{
+	
+	@BeforeMethod
+	public void setup()
+	{
+		Ini()
+	}
+	
+	@Test
+	public static void failed()
+	{
+		System.out.println("failed");
+	Assert.assertEquals(false, true);
+	}
+	
+	@Test
+	public static void passed()
+	{
+		System.out.println("passed");
+	Assert.assertEquals(true, true);
+	}
+	
+	@Test
+	public static void skipped()
+	{
+		System.out.println("skipped");
+	Assert.assertEquals(false, true);
+	}
+	
+	@Test
+	public static void failed1()
+	{
+		System.out.println("failed1");
+	Assert.assertEquals(false, true);
+	}
+	
+	@AfterMethod
+	public void tearDown()
+	{
+		
+	}
+
+}

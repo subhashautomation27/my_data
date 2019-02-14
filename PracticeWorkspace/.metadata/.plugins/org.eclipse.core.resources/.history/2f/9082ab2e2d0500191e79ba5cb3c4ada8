@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Testngsuite" parallel="false">
+  <test name="subhashTest">
+  <!-- <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http:/www.facebook.com"/> -->
+  <parameter name="emailid" value="subhashchandrabose3@gmail.com"/>
+  <parameter name="passwrd" value="subhash123"/>
+ 
+   <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http:/www.facebook.com"/> 
+ 
+  <parameter name="firstname" value="subhashchnadra"/>
+  <parameter name="surname" value="bose"/>
+  <parameter name="number" value="8123540407"/>
+  <parameter name="nwpasswrd" value="oiuytr"/>/
+  
+   <classes>
+      <class name="com.testngexam.NewTest"/>
+    </classes>
+ </test>
+ </suite>

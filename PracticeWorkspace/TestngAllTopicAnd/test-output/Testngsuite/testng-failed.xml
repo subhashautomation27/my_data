@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testngsuite]">
+  <test thread-count="5" name="subhashTest(failed)">
+    <parameter name="number" value="8123540407"/>
+    <parameter name="nwpasswrd" value="oiuytr"/>
+    <parameter name="firstname" value="subhashchnadra"/>
+    <parameter name="surname" value="bose"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http:/www.facebook.com"/>
+    <classes>
+      <class name="com.testngexam.NewTest">
+        <methods>
+          <include name="RegPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testngexam.NewTest -->
+    </classes>
+  </test> <!-- subhashTest(failed) -->
+</suite> <!-- Failed suite [Testngsuite] -->

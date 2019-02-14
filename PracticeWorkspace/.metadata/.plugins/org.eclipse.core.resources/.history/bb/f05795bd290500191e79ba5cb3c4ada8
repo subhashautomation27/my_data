@@ -1,0 +1,79 @@
+package com.testngexam;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class NewTest {
+	public static WebDriver driver ;
+	//public  static WebElement element;
+
+  @Test
+  @Parameters({"browser", "url","emailid","passwrd"})
+  public void FaceBookLogin(String browser, String url,String emailid,String password) {
+	  
+	  if (browser.equals("chrome")){
+		  System.setProperty("webdriver.chrome.driver", "E:\\PracticeWorkspace\\TestngAllTopicAnd\\Drivers\\chromedriver.exe");
+		  driver =new ChromeDriver();
+	  }else if (browser.equals("FireFox")){
+		  System.setProperty("webdriver.gecko.driver", "E:\\PracticeWorkspace\\TestngAllTopicAnd\\Drivers\\geckodriver.exe");
+		   driver =new FirefoxDriver();
+	  }
+	  
+	  driver.get(url);
+	  System.out.println("url launched");
+	  
+	WebElement element =driver.findElement(By.xpath("//*[@id='email']"));
+  	element.clear();
+  	
+  	WebElement element1 =driver.findElement(By.xpath("//*[@id='email']"));
+  	element1.sendKeys(emailid);
+  	
+  	WebElement element2 =driver.findElement(By.xpath("//*[@id='pass']"));
+  	element2.sendKeys(password);
+  	 
+  	WebElement element3 =driver.findElement(By.cssSelector("#loginbutton"));
+  	element3.click();
+  	
+  	
+  	
+  //*[@id="u_0_q"]
+  }
+  
+  
+  @Test
+  @Parameters({"browser", "url","firstname","surname"})
+  public void RegPage(String browser, String url,String firstname,String surname) {
+	  
+	  if (browser.equals("chrome")){
+		  System.setProperty("webdriver.chrome.driver", "E:\\PracticeWorkspace\\TestngAllTopicAnd\\Drivers\\chromedriver.exe");
+		  driver =new ChromeDriver();
+	  }else if (browser.equals("FireFox")){
+		  System.setProperty("webdriver.gecko.driver", "E:\\PracticeWorkspace\\TestngAllTopicAnd\\Drivers\\geckodriver.exe");
+		   driver =new FirefoxDriver();
+	  }
+	  
+	  driver.get(url);
+	  System.out.println("url launched");
+	  
+	WebElement element =driver.findElement(By.xpath("//*[@id='u_0_q']"));
+  	element.clear();
+  	
+  	WebElement element1 =driver.findElement(By.xpath("//*[@id='u_0_q']"));
+  	element1.sendKeys(firstname);
+  	
+  	WebElement element2 =driver.findElement(By.xpath("//*[@id='pass']"));
+  	element2.sendKeys(surname);
+  	 
+  	WebElement element3 =driver.findElement(By.cssSelector("#loginbutton"));
+  	element3.click();
+  	
+  	
+  	
+  
+  }
+}

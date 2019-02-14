@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [retryanalyzer]">
+  <listeners>
+    <listener class-name="com.retryanalizer.MyTrannsform"/>
+  </listeners>
+  <test thread-count="5" name="retryanalyzertest(failed)">
+    <classes>
+      <class name="com.retryanalizertest.MyTest">
+        <methods>
+          <include name="logoutTest"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="homwPage"/>
+        </methods>
+      </class> <!-- com.retryanalizertest.MyTest -->
+    </classes>
+  </test> <!-- retryanalyzertest(failed) -->
+</suite> <!-- Failed suite [retryanalyzer] -->

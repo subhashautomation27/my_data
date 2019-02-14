@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name='subahsh'>
+     <test name="t">
+           <classes>
+                     <class name="com.pack1.FirstTest"></class>
+                     <class name="com.pack2.LaunchBrowserTest"></class>
+            </classes>
+      </test>
+</suite>

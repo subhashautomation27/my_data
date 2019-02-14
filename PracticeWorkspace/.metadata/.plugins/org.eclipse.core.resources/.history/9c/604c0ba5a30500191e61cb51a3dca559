@@ -1,0 +1,37 @@
+package com.retryanalizertest;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class MyTest {
+	
+	
+	@BeforeMethod
+	public void init()
+	{      SoftAssert  asserta= new SoftAssert();
+		System.out.println("browser launched");
+		System.out.println("loggined url");
+		
+		System.out.println("enter in login page");
+		System.out.println("enter uswr name and password");
+		asserta.assertEquals(false, true); 
+		System.out.println("enter search page");
+		System.out.println("logout page");
+	}
+	
+	//@Test(retryAnalyzer=com.retryanalizer.RetryAnalizer.class)
+	@Test
+	public void loginTest()
+	{
+		Assert.assertEquals(false, true);
+	}
+	
+	@Test
+	public void logoutTest()
+	{
+		Assert.assertEquals(false, true);
+	}
+
+}

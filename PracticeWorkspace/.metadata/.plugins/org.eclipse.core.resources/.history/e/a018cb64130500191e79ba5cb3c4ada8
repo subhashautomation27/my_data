@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" 
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Testngsuite" parallel="false">
+  <test name="subhashTest">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http:/www.facebook.com"/>
+  <parameter name="emailid" value="subhashchandrabose3@gmail.com"/>
+  <parameter name="passwrd" value="chrome"/>
+   <classes>
+      <class name="com.testngexam.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

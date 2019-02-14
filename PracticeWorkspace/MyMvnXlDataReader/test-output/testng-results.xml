@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="203333" started-at="2018-12-11T08:51:37Z" finished-at="2018-12-11T08:55:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="203333" started-at="2018-12-11T08:51:37Z" finished-at="2018-12-11T08:55:00Z">
+      <class name="com.testdata.DataRead">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testdata.DataRead@55f3ddb1]" name="setup" is-config="true" duration-ms="178823" started-at="2018-12-11T08:51:37Z" finished-at="2018-12-11T08:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dataTest()[pri:0, instance:com.testdata.DataRead@55f3ddb1]" name="dataTest" duration-ms="24420" started-at="2018-12-11T08:54:36Z" finished-at="2018-12-11T08:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testdata.DataRead@55f3ddb1]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-12-11T08:55:00Z" finished-at="2018-12-11T08:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testdata.DataRead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

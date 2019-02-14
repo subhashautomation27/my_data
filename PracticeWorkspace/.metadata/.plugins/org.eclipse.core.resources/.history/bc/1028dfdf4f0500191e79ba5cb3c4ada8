@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="retryanalyzer">
+<test name="retryanalyzertest">
+  <classes>
+  <class name="com.retryanalizertest.myTest"></class>
+  
+  </classes>
+
+
+</test>
+</suite>

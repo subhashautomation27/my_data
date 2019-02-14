@@ -1,0 +1,12 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailedTestsuite">
+ <listeners>
+<listener class-name="com.RetryAnalyzer.MyTransformer"/>
+</listeners>
+<test name="RetryTest" >
+<classes>
+<class name="com.Mytests.RetryTest"></class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,58 @@
+package com.Practice;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+public class HandelIsDisplayedEnabledSelected {
+	static WebDriver driver;
+	@Test(priority=0)
+	public void browserPath()
+	{
+		System.setProperty("webdriver.chrome.driver", "E:\\PracticeWorkspace\\RecalPrecticeConcepts\\Drivers\\chromedriver.exe");
+		    driver=new ChromeDriver();
+		   String url="https://www.freecrm.com/index.html";
+		   driver.get(url);
+		   driver.manage().window().maximize();
+		   driver.manage().deleteAllCookies();
+		   driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		   driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	}
+	@Test(priority=1)
+	//this is aplicable all  elements displayed or not
+	// its return bollean . 
+	public void isDisplayed()
+	{     
+		  boolean b=driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]")).isDisplayed();//true
+		  boolean b1= driver.findElement(By.xpath("//*[@id='loginForm']/div/input[2]")).isDisplayed();//true
+		  boolean b2=driver.findElement(By.xpath("//*[@id='loginForm']/div/div/input")).isDisplayed();//true
+		  System.out.println(b);
+		  System.out.println(b1);
+		  System.out.println(b2);
+	}
+	@Test(priority=2)
+	//it is applicable only for button is enabled ot not 
+	public void isEnabled()
+	{    
+		 // boolean b=driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]")).isDisplayed();//
+		  //boolean b1= driver.findElement(By.xpath("//*[@id='loginForm']/div/input[2]")).isDisplayed();
+		  boolean b2=driver.findElement(By.xpath("//*[@id='loginForm']/div/div/input")).isEnabled();//true
+		  //System.out.println(b);
+		  //System.out.println(b1);
+		  System.out.println(b2);
+	}
+	@Test(priority=3)
+	//it is applicable for checkbox and radio buttons and drop down .
+	public void isselected()
+	{      
+		 // boolean b=driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]")).isDisplayed();
+		  //boolean b1= driver.findElement(By.xpath("//*[@id='loginForm']/div/input[2]")).isDisplayed();
+		  boolean b2=driver.findElement(By.xpath("//*[@id='loginForm']/div/div/input")).isSelected();//false bcoz there is no checkbox or drop down 
+		 // System.out.println(b);
+		  //System.out.println(b1);
+		  System.out.println(b2);
+	}
+
+
+
+}

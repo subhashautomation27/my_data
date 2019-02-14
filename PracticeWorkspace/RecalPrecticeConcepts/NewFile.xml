@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="subhash" >
+<parameter name="browser" value="E:\\PracticeWorkspace\\RecalPrecticeConcepts\\Drivers\\chromedriver.exe"/>
+<test name="subhashtest">
+<classes>
+<class name="com.Practice.PerameterizedTest">
+<methods>
+ <include name="parameterTest"/>
+ <exclude name=""/>
+</methods>
+</class>
+</classes>
+</test>
+</suite>

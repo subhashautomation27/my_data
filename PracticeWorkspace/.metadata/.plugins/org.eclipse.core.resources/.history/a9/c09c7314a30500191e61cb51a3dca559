@@ -1,0 +1,21 @@
+package com.retryanalizertest;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class MyTest {
+	
+	//@Test(retryAnalyzer=com.retryanalizer.RetryAnalizer.class)
+	@Test
+	public void loginTest()
+	{
+		Assert.assertEquals(false, true);
+	}
+	
+	@Test
+	public void logoutTest()
+	{
+		Assert.assertEquals(false, true);
+	}
+
+}

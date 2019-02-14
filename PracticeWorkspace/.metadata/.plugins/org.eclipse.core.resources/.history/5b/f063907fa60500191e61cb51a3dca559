@@ -1,0 +1,54 @@
+package com.retryanalizertest;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class MyTest {
+	
+	
+	@BeforeMethod
+	public void init()
+	{      SoftAssert  asserta= new SoftAssert();
+		System.out.println("browser launched");
+		System.out.println("loggined url");
+		
+		System.out.println("enter in login page");
+		System.out.println("enter uswr name and password");
+		asserta.assertEquals(false, true); 
+		System.out.println("enter search page");
+		System.out.println("logout page");
+		asserta.assertAll();
+		
+	}
+	
+	//@Test(retryAnalyzer=com.retryanalizer.RetryAnalizer.class)
+	@Test(priority=1,groups="test")
+	public void loginTest()
+	{
+		Assert.assertEquals(true, true);
+	}
+	
+	@Test(priority=2,groups="test",dependsOnGroups={"test"})
+	public void homwPage()
+	{
+		Assert.assertEquals(true, true);
+	}
+	
+	
+	@Test(priority=3,groups="test1")
+	public void logoutTest()
+	{
+		Assert.assertEquals(false, true);
+	}
+	
+	
+	@AfterMethod
+	public void tearDown() throws CloneNotSupportedException
+	{
+		clone();
+	}
+
+}
